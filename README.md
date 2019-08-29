@@ -3,7 +3,7 @@
 
 
 # Resources
-# asdkjalsdj
+---
 ## LAMP Development environment
 * https://www.mamp.info/en/
 
