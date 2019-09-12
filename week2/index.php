@@ -48,15 +48,19 @@
         $_POST["animal2"]
     );
     */
-    $adjective1 = $_POST["adjective1"];
-    $color = $_POST["color"];
-    $animal1 = $_POST["animal1"];
-    $verb1 = $_POST["verb1"];
-    $adjective2 = $_POST["adjective2"];
-    $animal2 = $_POST["animal2"];
+    
+    if (sizeof($_POST) >= 0) {
+        $adjective1 = $_POST["adjective1"];
+        $color = $_POST["color"];
+        $animal1 = $_POST["animal1"];
+        $verb1 = $_POST["verb1"];
+        $adjective2 = $_POST["adjective2"];
+    
+    
+        $animal2 = $_POST["animal2"];
 
-    $out = "<h2>The $adjective1 $color $animal1 $verb1 over the $adjective2 $animal2.</h2>";
-
+        $out = "<h2>The $adjective1 $color $animal1 $verb1 over the $adjective2 $animal2.</h2>";
+    }
     if (sizeof($_POST) > 0) {
         echo $out;
     } else {
@@ -65,7 +69,7 @@
     ?>
     <pre>
     <?php
-    if ($_REQUEST[debug] == 1) {
+    if ($_REQUEST['debug'] == 1) {
         print_r($_POST);
         print_r($_REQUEST);
     }
