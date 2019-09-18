@@ -16,7 +16,7 @@
             padding: 10px;
         }
         .red, td {
-            color: red;
+            color: blue;
         }
         .green, td {
             color: green;
@@ -25,7 +25,7 @@
 </head>
 <body>
 <p><h1>For loop</h1></p>
-    <?php 
+    <?php
     for($count=1;$count <= 10 ; $count++) {
         echo $count . '</br>';
     }
@@ -37,7 +37,7 @@
     while($count <= 10 ){
         echo $count . '</br>';
         $count++;
-    } 
+    }
     ?>
     <hr/>
     <p><h1>Do...While loop</h1></p>
@@ -76,8 +76,8 @@
                         $column
                         </th>";
                     }
-        ?>     
-    </tr>    
+        ?>
+    </tr>
     <?php
         $rows=5;
         for($row=1;$row<$rows;$row++){
@@ -103,8 +103,8 @@
                     $column
                     </th>";
                 }
-    ?>     
-    </tr>    
+    ?>
+    </tr>
     <?php
         $rows=6;
         for($row=1;$row<$rows;$row++){
