@@ -110,27 +110,13 @@ if (!$result) {
 
 
 
-/*
+
 $user1 = "INSERT INTO `users` (`id`, `first_name`, `last_name`, `username`, `active`) VALUES (NULL, 'John', 'Doe', 'jd1', '1');";
 $user2 = "INSERT INTO `users` (`id`, `first_name`, `last_name`, `username`, `active`) VALUES (NULL, 'Jane', 'Doe', 'jd2', '1');";
 
-$result = $connect->query($dropTable);
-if (!$result) {
-    die ('Something went wrong.'); 
-} else {
-    echo "table Dropped" . $result ."</br>";
-}
 
-$result = $connect->query($query);
-if (!$result) {
-    die ('Something went wrong.'); 
-} else {
-    echo "table Created" . $result ."</br>";
-}
-
-echo 'add users'."</br>";;
+echo 'add users'."</br>";
 $result = $connect->query($user1);
-echo $result ."</br>";;
+echo $result ."</br>";
 $result = $connect->query($user2);
-echo $result ."</br>";;
-*/
+echo $result ."</br>";
