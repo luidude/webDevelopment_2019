@@ -1,0 +1,10 @@
+Select * from <tableName> where <some condition>
+
+
+
+select * from members where id=1; 
+
+select * from members where age>25;
+
+
+UPDATE members SET age ='28' where id=1;

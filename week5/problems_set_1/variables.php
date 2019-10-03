@@ -6,14 +6,14 @@ $x = 0;
 $x++;
 
 // write answer here => 
-
+echo $x; echo "</br>";
 
 //2.
 $x = 0;
 $x--;
 
 // write answer here => 
-
+echo $x; echo "</br>";
 
 //3.
 $x = 0;
@@ -21,7 +21,7 @@ $y = 100;
 $x = $y * 2;
 
 // write answer here => 
-
+echo $x; echo "</br>";
 
 //4.
 $x = 7;
@@ -32,7 +32,7 @@ if($y > 10){
 } else {
     $x--;
 }
-
+echo $x; echo "</br>";
 // write answer here => 
 
 
@@ -45,7 +45,7 @@ if($y == 10){
 } else {
     $x--;
 }
-
+echo $x; echo "</br>";
 // write answer here => 
 
 
@@ -54,7 +54,7 @@ $x = "This is a string.";
 $x = $x . " This is another string.";
 
 // write answer here => 
-
+echo $x; echo "</br>";
 
 //7
 $x = "This is a string.";
@@ -63,7 +63,7 @@ $y = " This is new string.";
 $x = $x . $y;
 
 // write answer here => 
-
+echo $x; echo "</br>";
 //8.
 $x = 0;
 
@@ -72,7 +72,7 @@ for($i=0; $i<2; $i++){
 }
 
 // write answer here => 
-
+echo $x; echo "</br>";
 //9.
 $x = 0;
 for($i=0; $i<=2; $i++){
@@ -80,7 +80,7 @@ for($i=0; $i<=2; $i++){
 }
 
 // write answer here => 
-
+echo $x; echo "</br>";
 
 //10.
 $x = "This is a string. \n";
@@ -89,7 +89,7 @@ for($i=0; $i<=5; $i++){
 }
 
 // write answer here => 
-
+echo $x; echo "</br>";
 
 //11.
 $x = 0;
@@ -99,7 +99,7 @@ foreach($y as $value){
 }
 
 // write answer here => 
-
+echo $x; echo "</br>";
 
 //12.
 $x = "0";
@@ -110,7 +110,7 @@ foreach($y as $value){
 
 // write answer here => 
 
-
+echo $x; echo "</br>";
 //13.
 $x = "0";
 $y = array(1,2,3,4,5);
@@ -121,7 +121,7 @@ foreach($y as $value){
 }
 
 // write answer here => 
-
+echo $x; echo "</br>";
 
 //14.
 $x = 0;
@@ -138,7 +138,7 @@ if($y == 'red') {
 }
 
 // write answer here => 
-
+echo $x; echo "</br>";
 
 //15.
 $x = 0;
@@ -160,7 +160,7 @@ if($y == 'red') {
 }
 
 // write answer here => 
-
+echo $x; echo "</br>";
 
 //16.
 $x = 0;
@@ -182,3 +182,4 @@ if($y == 'red') {
 }
 
 // write answer here => 
+echo $x; echo "</br>";

@@ -16,7 +16,7 @@
 
 if(sizeof($_POST)){
     $username = $_POST['username'];
-    $query = "SELECT * from users where username = '".$username."' ;";
+    $query = "SELECT first_name, last_name from users where username = '".$username."' ;";
     
     $result = $connect->query($query);
     
