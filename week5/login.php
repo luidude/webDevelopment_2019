@@ -12,9 +12,20 @@
         </p>
     </form>
     <?php require_once 'databaseConn.php'; ?>
+    <?php
+    // Print an individual cookie
+    echo $_COOKIE["TestCookie"];
+
+    // Another way to debug/test is to view all cookies
+    print_r($_COOKIE);
+    ?>
+
 <?php 
 
 if(sizeof($_POST)){
+
+    setcookie("TestCookie", 'I am '.$_POST['username']);
+
     $username = $_POST['username'];
     $query = "SELECT first_name, last_name from users where username = '".$username."' ;";
     

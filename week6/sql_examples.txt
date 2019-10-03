@@ -8,3 +8,16 @@ select * from members where age>25;
 
 
 UPDATE members SET age ='28' where id=1;
+
+delete from members 
+
+
+insert into members (id,fname,lname,contact,age,active)
+        values(1,'Luis2','','lcornejo','25',1);
+
+MY Blog
+
+
+
+
+

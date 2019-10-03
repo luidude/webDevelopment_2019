@@ -1,0 +1,17 @@
+Create html/php pages.
+    login
+        should log in a person by username
+    home_page_feed.php
+        should list all posts
+        should list all comments
+        should have a comment_form
+    create_post.php
+        should have a create_post_form
+    my_posts.php
+        should list all post of user logged in
+    author_posts.php
+        should list all users/author
+        should show list of posts based on username clicked
+    views.php
+        should list contents of views table.
+

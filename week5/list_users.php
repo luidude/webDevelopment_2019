@@ -76,6 +76,14 @@
             <input type="submit" value="Add New User">
         </p>
     </form> 
+
+    <?php
+    // Print an individual cookie
+    echo $_COOKIE["TestCookie"];
+
+    // Another way to debug/test is to view all cookies
+    print_r($_COOKIE);
+    ?>
 <?php
 
 if (count($_POST)) {
