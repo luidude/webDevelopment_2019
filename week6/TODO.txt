@@ -3,15 +3,42 @@ Create html/php pages.
         should log in a person by username
     home_page_feed.php
         should list all posts
-        should list all comments
+            create an html table to display posts.
+            create a PHP block to select posts and loop over array to build table rows.
+                sql query should select all posts
+                each row should have a link that takes you to view_one_post.php      
+
+    view_one_post.php
+        should show a single post
+            sql query should select a single post.
+        should list all comments for a single post
+            create an html table to display comments.
+            create a PHP block to select posts and loop over array to build table rows.
+            sql query should select all comments for a given post.
         should have a comment_form
+            create a form to collect and submit comment.
+                text area with name='message'
+                submit button to submit form
+
     create_post.php
         should have a create_post_form
+            crate form to collect and submit post message.
+            submit button to submit form
+
     my_posts.php
         should list all post of user logged in
+            create an html table to display posts.
+            create a PHP block to select posts and loop over array to build table rows.
+                sql query should have a where clause that filters results by a single username
+
     author_posts.php
         should list all users/author
+            create an html table to display usernames.
+                sql query should select list of all users.
         should show list of posts based on username clicked
+            create an html table to display list of posts.
+                sql query should select list of posts based on username clicked.
+                
     views.php
         should list contents of views table.
 
