@@ -1,23 +1,49 @@
+
+#insert statements examples
+
+INSERT INTO php_crud.users (`id`, `first_name`, `last_name`, `username`, `active`) 
+  VALUES (NULL, 'Jane', 'Doe', 'jd2', '1');
+
+INSERT INTO php_crud.blog_posts ( message, subject, created_date, username) 
+VALUES ( 'Blog post message here...', 'subject here...', now(), 'username here...');
+
+INSERT INTO php_crud.comments ( blog_post_id, message, username, created_date) 
+VALUES ( 1, 'comment text here....', 'username here', now());
+
+INSERT INTO php_crud.views ( device_type, ip_address, username, created_date, comment_id) 
+VALUES ( 'ipad', '1.0.0.0', 'lui', '2019-10-03 00:00:00', 1);
+
+#select statement examples with different WHERE clauses.
+
 Select * from <tableName> where <some condition>
 
+// select records where id is equal to id number. Note: numbers are not quoted.
+select * from php_crud.users where id=1; 
+
+// select records where username is equal to 'jd1'
+select * from php_crud.users where username='jd1';
+
+// select records between two dates.
+select * from php_crud.blog_posts where username='jd1' and create_date BETWEEN '2012-12-25 00:00:00' AND '2012-12-25 23:59:59';
+
+// select records were created_date is greater that some date.
+select * from php_crud.comments where username='jd1' and create_date >= '2019-10-1';
 
 
-select * from members where id=1; 
-
-select * from members where age>25;
-
-
-UPDATE members SET age ='28' where id=1;
-
-delete from members 
+#update statement example
+UPDATE php_crud.comments SET message ='New message text here' where id=1;
 
 
-insert into members (id,fname,lname,contact,age,active)
-        values(1,'Luis2','','lcornejo','25',1);
+#delete stateme example
 
-MY Blog
+// will delete one user record with user name equal to what you replace 'some username here....'
+delete from php_crud.users where username='some username here....'
 
+//will delete one post record that has id = 1
+delete from php_crud.blog_posts where id=1 
 
+//will delete one comments record that has id = 1
+delete from php_crud.comments where id=1 
 
-
-
+//will delete one views record that has id = 1
+delelte from php_crud.views where id = 1
