@@ -95,8 +95,8 @@ if ($_POST['first_name']) {
     $query = "INSERT INTO `users` (`id`, `first_name`, `last_name`, `username`, `active`) 
 VALUES (NULL, '".$first_name."', '".$last_name."', '".$_POST['username']."', '1');";
 
-IINSERT INTO `users` (`id`, `first_name`, `last_name`, `username`, `active`) 
-VALUES (NULL, 'Luis', 'Cornejo', 'lcornejo', '1');
+//INSERT INTO `users` (`id`, `first_name`, `last_name`, `username`, `active`) ;
+//VALUES (NULL, 'Luis', 'Cornejo', 'lcornejo', '1');
 
     echo $sql;
     $result = $connect->query($query);

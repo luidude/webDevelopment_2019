@@ -1,0 +1,46 @@
+Week 8 Notes:
+
+https://www.codecademy.com/learn/learn-php
+
+0. Show and tell.
+
+1. GIT  
+    Create a new repo and send link to me.
+
+2. php
+    -Functions are uses to encapsulate functionality.
+    -Functions save you from typing the same code over and over again.
+    -Functions can make your code look cleaner. Offload functions to another file.
+    -Lets create some functions to help us write form elements, dropdowns, radio buttons and checkboxes.
+      -See static examples in examples.php
+    -See examples: my_functions.php and index.php
+
+3. Project Ideas
+ 
+
+
+
+
+
+
+
+Funtions
+    -Help encapsulate repeatable code.
+
+<?php
+function writeMsg() {
+    echo "Hello world!";
+}
+
+writeMsg(); // call the function
+?>
+
+
+
+$age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
+
+foreach($age as $x => $x_value) {
+    echo "Key=" . $x . ", Value=" . $x_value;
+    echo "<br>";
+}
+
